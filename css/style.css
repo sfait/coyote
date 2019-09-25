@@ -44,7 +44,7 @@ body {
 }
 
 .background {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: url("../img/canyon.jpg") no-repeat center/cover;
     position: fixed;
@@ -53,7 +53,7 @@ body {
 }
 
 .background-shadow {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: var(--background-color);
     z-index: -2;
