@@ -5,7 +5,8 @@
     --links-color: #6f4a40;
     --menu-color: #ddd2ca;
     --button-color: #343b46;
-    --background-color: rgba(0, 0, 0, 0.5);
+    --background-color: rgba(0, 0, 0, 0.65);
+    --second-background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* general */
@@ -230,8 +231,88 @@ body {
     transform: translateX(0);
 }
 
+/* hero */
+.hero {
+    padding: 6rem 0;
+    margin-bottom: 2rem;
+}
+
+.hero-wrapper {
+    color: var(--white-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-header {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.hero-paragraph {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.discord-btn {
+    padding: 1rem 2.5rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+    transition: background 0.6s;
+}
+
+.discord-btn:hover {
+    background: var(--second-background-color);
+}
+
+/* footer */
+.footer {
+    padding: 1rem 0;
+}
+
+.footer-wrapper {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-wrapper span {
+    opacity: 0.5;
+}
+
+.footer-wrapper a {
+    margin-left: 0.2rem;
+    color: var(--white-color);
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.footer-wrapper a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.copy-wrapper {
+    margin-bottom: 0.5rem;
+}
+
 
 /* media queries*/
 @media only screen and (min-width: 1000px) {
+    .footer-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    .copy-wrapper {
+        margin-bottom: 0;
+    }
 }
