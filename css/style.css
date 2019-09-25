@@ -1,12 +1,13 @@
 /* variables */
 :root {
-    --black-color: #444444;
+    --black-color: #000000;
     --white-color: #ffffff;
     --links-color: #6f4a40;
     --menu-color: #ddd2ca;
     --button-color: #343b46;
     --background-color: rgba(0, 0, 0, 0.65);
     --second-background-color: rgba(255, 255, 255, 0.3);
+    --third-background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* general */
@@ -302,6 +303,96 @@ body {
 
 .copy-wrapper {
     margin-bottom: 0.5rem;
+}
+
+/* subpages */
+.subpages-hero {
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.subpages-hero-wrapper {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subpages-second-header {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.subpages-section {
+    padding: 2rem 0 1rem;
+    background: var(--white-color);
+}
+
+.subpages-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subpages-fourth-header {
+    margin: 0 0 2rem;
+    font-size: 1.5rem;
+}
+
+.cite {
+    align-self: flex-start;
+    margin-bottom: 2rem;
+}
+
+.subpages-paragraph {
+    margin: 0 0 1rem;
+}
+
+.member, .member-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.member {
+    margin: 1rem 0 2rem;
+}
+
+.member-photo {
+    margin: 2rem 0;
+    width: 300px;
+    height: 200px;
+    background: yellow;
+    border-radius: 5px;
+}
+
+.member-title {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.additional-paragraph {
+    display: none;
+}
+
+.read-more-less-btn {
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.6s;
+}
+
+.read-more-less-btn:hover {
+    background: var(--third-background-color);
+}
+
+.read-more-less-btn:last-of-type {
+    margin-bottom: 0;
 }
 
 
