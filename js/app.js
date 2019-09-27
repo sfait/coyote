@@ -30,12 +30,12 @@ function changeTitle() {
 }
 
 function readMore() {
-     const readMoreLessBtn = document.querySelectorAll(".read-more-less-btn");
+    const readMoreLessBtn = document.querySelectorAll(".read-more-less-btn");
 
-     function showHideText() {
+    function showHideText() {
         const siblingText = this.previousElementSibling;
 
-       if (siblingText.style.display === "none" || siblingText.style.display === "") {
+        if (siblingText.style.display === "none" || siblingText.style.display === "") {
             siblingText.style.display = "block";
             this.textContent = "Czytaj mniej";
         } else {
@@ -60,7 +60,7 @@ function showPhoto() {
 
             window.addEventListener("click", function(e) {
                 if (e.target == modal) {
-                    modal.style.display = "none";
+                    modal.classList.toggle("show-modal");
                 }
             })
         })
