@@ -67,11 +67,22 @@ function showPhoto() {
     }
 }
 
+function showAnimation() {
+    const animations = document.querySelectorAll(".animation");
+
+    window.addEventListener("load", function() {
+        for (let i = 0; i < animations.length; i++) {
+            animations[i].classList.add("show-animation");
+        }
+    })
+}
+
 const init = () => {
     showHamburgerMenu();
     changeTitle();
     readMore();
     showPhoto();
+    showAnimation();
 }
 
 document.addEventListener("DOMContentLoaded", init);

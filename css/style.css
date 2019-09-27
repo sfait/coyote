@@ -594,6 +594,14 @@ html, body {
     display: block;
 }
 
+/* animation */
+.show-animation {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
 /* media queries*/
 @media only screen and (min-width: 1000px) {
     .footer-wrapper {
