@@ -16,8 +16,10 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100vw;
+html, body {
+    height: 100%;
+    width: 100%;
+    position: relative;
     overflow-x: hidden;
 }
 
@@ -45,7 +47,7 @@ body {
 }
 
 .background {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: url("../img/canyon.jpg") no-repeat center/cover;
     position: fixed;
