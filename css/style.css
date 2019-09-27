@@ -301,15 +301,12 @@ body {
 /* footer */
 .footer {
     padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
+    background: var(--white-color);
 }
 
 .footer-wrapper {
-    margin-left: 1rem;
-    color: var(--white-color);
+    color: var(--black-color);
     text-align: center;
-    opacity: 0.5;
 }
 
 /* subpages */
@@ -597,21 +594,9 @@ body {
     display: block;
 }
 
-.subpages-footer {
-    background: var(--white-color);
-    position: static;
-}
-
-.subpages-footer-wrapper {
-    margin: 0;
-    color: var(--black-color);
-    opacity: 1;
-}
-
 /* media queries*/
 @media only screen and (min-width: 1000px) {
     .footer-wrapper {
-        margin-left: 4rem;
         text-align: left;
     }
 
