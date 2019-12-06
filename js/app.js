@@ -2,7 +2,7 @@ function showHamburgerMenu() {
     const hamburger = document.querySelector(".hamburger");
     const menu = document.querySelector(".menu");
 
-    const handleClick = () => {
+    const handleClick = function() {
         hamburger.classList.toggle("hamburger-active");
         menu.classList.toggle("menu-active");
     }
@@ -77,7 +77,7 @@ function showAnimation() {
     })
 }
 
-const init = () => {
+const init = function() {
     showHamburgerMenu();
     changeTitle();
     readMore();
